@@ -24,7 +24,7 @@ const ServiceDetails = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 mb-6">
+      <div className="grid grid-cols-1  md:grid-cols-3 mb-6">
         <div className="col-span-2  mx-5">
           <div className="mr-6 mb-5">
             <img src={img} alt="" className=" rounded h-auto" />
@@ -144,32 +144,32 @@ const ServiceDetails = () => {
               <h3 className="text-xl text-center font-bold text-orange-600">
                 Services
               </h3>
-              <ul className="w-96">
-                <li className="w-32 md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
+              <ul className="w-full">
+                <li className="md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
                   <p className="ml-5 flex justify-between mr-2">
                     Full Car Repair{" "}
                     <FaArrowRight className="self-center"></FaArrowRight>
                   </p>
                 </li>
-                <li className="w-32 md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
+                <li className="md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
                   <p className="ml-5 flex justify-between mr-2">
                     Battery Charge
                     <FaArrowRight className="self-center"></FaArrowRight>
                   </p>
                 </li>
-                <li className="w-32 md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
+                <li className="md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
                   <p className="ml-5 flex justify-between mr-2">
                     Engine Repair
                     <FaArrowRight className="self-center"></FaArrowRight>
                   </p>
                 </li>
-                <li className="w-32 md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
+                <li className="md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
                   <p className="ml-5 flex justify-between mr-2">
                     Automatic Services
                     <FaArrowRight className="self-center"></FaArrowRight>
                   </p>
                 </li>
-                <li className="w-32 md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
+                <li className="md:w-58 lg:w-72 rounded bg-white border-opacity-100 py-4 mt-2">
                   <p className="ml-5 flex justify-between mr-2">
                     Engine Oil Change
                     <FaArrowRight className="self-center"></FaArrowRight>
@@ -187,12 +187,12 @@ const ServiceDetails = () => {
                 <p className="text-white text-3xl self-center mr-2">
                   <FaDownload></FaDownload>
                 </p>
-                <div className="md:flex lg:flex w-full justify-between">
+                <div className="flex w-full justify-between">
                   <div className="text-white">
                     <p className="text-xl font-bold">Company Details</p>
                     <p>Download</p>
                   </div>
-                  <div className="sm:w-10 text-white self-center mr-2 bg-orange-600 p-3">
+                  <div className="text-white self-center mr-2 bg-orange-600 p-3">
                     <FaArrowRight></FaArrowRight>
                   </div>
                 </div>
@@ -201,12 +201,12 @@ const ServiceDetails = () => {
                 <p className="text-white text-3xl self-center mr-2">
                   <FaDownload></FaDownload>
                 </p>
-                <div className="md:flex lg:flex w-full justify-between">
+                <div className="flex w-full justify-between">
                   <div className="text-white">
-                    <p className="text-xl font-bold">Our Brochure</p>
+                    <p className="text-xl font-bold">Our Brochures</p>
                     <p>Download</p>
                   </div>
-                  <div className="sm:w-10 text-white self-center mr-2 bg-orange-600 p-3">
+                  <div className="text-white self-center mr-2 bg-orange-600 p-3">
                     <FaArrowRight></FaArrowRight>
                   </div>
                 </div>
@@ -227,13 +227,13 @@ const ServiceDetails = () => {
               </div>
               <div className="bg-white mx-8 rounded mt-3 p-5 relative ">
                 <p className="text-xl font-bold text-center">
-                  <span className="text-orange-600">Car Doctor</span> Special
+                  <span className="text-orange-600">Car Fixer</span> Special
                 </p>
                 <p className="text-center mt-1 mb-3">
                   Save up to <span className="text-orange-600">50% off</span>{" "}
                 </p>
-                <div className="sm:hidden lg:block flex justify-center md:left-24 lg:left-24   absolute top-1/5  ">
-                  <div className="bg-orange-600  w-32 text-center  rounded p-3">
+                <div className="flex justify-center left-28   absolute top-1/5  ">
+                  <div className="bg-orange-600   text-center  rounded p-3">
                     <p className="text-white">Get A Quote</p>
                   </div>
                 </div>

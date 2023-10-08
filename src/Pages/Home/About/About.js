@@ -1,6 +1,7 @@
 import React from "react";
 import person from "../../../assets/images/about_us/person.jpg";
 import parts from "../../../assets/images/about_us/parts.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -33,7 +34,9 @@ const About = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn bg-orange-600">Get more info</button>
+          <Link to="contact">
+            <button className="btn bg-orange-600">Get more info</button>
+          </Link>
         </div>
       </div>
     </div>

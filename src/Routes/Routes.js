@@ -11,6 +11,7 @@ import CartDetails from "../Pages/CartDetails/CartDetails";
 import PrivateRoute from "./PrivateRoute";
 import Services from "../Pages/Services/Services";
 import Appoinment from "../Pages/Appoinment/Appoinment";
+import ContactUs from "../Pages/ContactUs/ContactUs";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs></ContactUs>,
       },
       {
         path: "/login",

@@ -57,9 +57,9 @@ const CheckOut = () => {
       </div>
       {/* form */}
       <form onSubmit={handleOrder}>
-        <div className="hero my-5 bg-base-200 p-5">
+        <div className="hero">
           <div className="hero-content ">
-            <div className="card  w-full shadow-2xl bg-base-100 p-5">
+            <div className="card  w-full shadow-xl ">
               <div className="card-body">
                 <p className="self-center text-xl font-bold text-orange-600">
                   Service: {service.title}

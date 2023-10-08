@@ -11,7 +11,7 @@ const CartCard = ({ order, handleDelete, handleOrderConfirm }) => {
           <label>
             <button
               onClick={() => handleDelete(_id)}
-              className="bg-color p-2 rounded-lg"
+              className="bg-red-600 p-3 rounded-lg text-white btn btn-outline text-2xl flex flex-col justify-center"
             >
               X
             </button>

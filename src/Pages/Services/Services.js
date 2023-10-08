@@ -33,27 +33,29 @@ const Services = () => {
         </p>
       </div>
       <div className="flex justify-between">
-        <button
-          className="btn bg-orange-600"
-          onClick={() => setAcendingOrder(!acendingOrder)}
-        >
-          {acendingOrder ? "Price: High to Low" : "Price: Low to High"}
-        </button>
+        <div className="w-1/2">
+          <button
+            className="btn bg-orange-600"
+            onClick={() => setAcendingOrder(!acendingOrder)}
+          >
+            {acendingOrder ? "Price: High to Low" : "Price: Low to High"}
+          </button>
+        </div>
         <div className="join">
           <input
             ref={searchRef}
-            className="input input-bordered join-item"
+            className="input input-bordered join-item  hidden md:block"
             placeholder="Search"
           />
           <button
-            className="btn join-item rounded-r-full bg-orange-600"
+            className="sm:w-1/2 btn join-item rounded-r-full bg-orange-600  hidden md:block"
             onClick={handleSearch}
           >
             Search
           </button>
         </div>
       </div>
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5">
+      <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5">
         {services.map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}

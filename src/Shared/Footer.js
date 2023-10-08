@@ -1,16 +1,16 @@
 import React from "react";
 
-import logo from "../assets/logo.svg";
-
 const Footer = () => {
   return (
     <footer className="footer p-32 bg-black text-white">
       <div>
-        <img src={logo} alt="" />
+        <h1 className="text-4xl font-bold">
+          Car<span className="text-yellow-500">Fixer</span>
+        </h1>
         <p>
-          ACME Industries Ltd.
+          Car Fixer Industries Ltd.
           <br />
-          Providing reliable tech since 1992
+          Providing reliable tech since 2000
         </p>
       </div>
       <div>

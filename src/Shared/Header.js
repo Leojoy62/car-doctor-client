@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import logo from "../assets/logo.svg";
+
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Pages/Provider/AuthProvider";
 
@@ -47,6 +47,11 @@ const Header = () => {
                 </Link>
               )}
             </li>
+            <li>
+              <Link to="/contact" className="text-orange-600">
+                Contact Us
+              </Link>
+            </li>
 
             <li>
               {user?.uid ? (
@@ -63,7 +68,10 @@ const Header = () => {
         </div>
         <Link to="/">
           {" "}
-          <img src={logo} alt="" />
+          {/* <img src={logo} alt="" /> */}
+          <h1 className="text-2xl font-bold">
+            Car<span className="text-yellow-500">Fixer</span>
+          </h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -79,12 +87,18 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link to="/contact" className="text-orange-600">
+              Contact Us
+            </Link>
+          </li>
+          <li>
             {user?.uid && (
               <Link to="/orders" className="text-orange-600">
                 Orders
               </Link>
             )}
           </li>
+
           <li>
             {user?.uid ? (
               <Link to="/logout" className="text-orange-600">

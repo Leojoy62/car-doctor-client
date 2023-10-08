@@ -8,6 +8,7 @@ import {
 
 const TeamCard = ({ expert }) => {
   const { img, description, title } = expert;
+  console.log(title);
   return (
     <div className="card card-compact w-92 bg-base-100 shadow-xl">
       <figure>

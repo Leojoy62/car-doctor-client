@@ -4,8 +4,13 @@ import TeamCard from "./TeamCard";
 const Team = () => {
   const [experts, setExpert] = useState([]);
 
+  // useEffect(() => {
+  //   fetch("teams.json")
+  //     .then((res) => res.json())
+  //     .then((data) => console.log("data", data));
+  // }, []);
   useEffect(() => {
-    fetch("team.json")
+    fetch("https://car-doctor-server-gilt-gamma.vercel.app/team")
       .then((res) => res.json())
       .then((data) => setExpert(data));
   }, []);
